@@ -1,0 +1,31 @@
+.navbar-header a,.navbar-nav a{color:#fff;}
+.navbar-inverse {
+    background-color: #b00;
+    border-color: #b00;
+}
+.navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-brand{color:#fff;}
+.new_customer_form{
+margin:100px 50px 0px 15px;
+}
+
+.form_submit{background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+border: 1px solid rgb(204, 204, 204);
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 26px;
+opacity: 0.95;}
+
+.form_submit label.header{font-size: 18px;
+color: #000;}
+.blocks,.bxSlider li{background-color: rgb(232, 246, 254);
+  min-height: 150px;padding:10px;
+  margin-right: 10px;
+border: 1px solid #f3f3f3;
+border-radius: 4px;}
+.flexbox{display: flex;}
+.bx-wrapper .bx-next{right: -60px}
+.bx-wrapper .bx-prev{left: -60px}
+.bx-pager{display: none;}
+.bxSlider{display: flex;}
+.viewdetails{position: absolute;
+bottom: 10px;opacity: 0.8;right: 5px}

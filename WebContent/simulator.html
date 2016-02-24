@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="offcanvas.css" rel="stylesheet">
-    <link href="css/jquery.treeview.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -66,87 +66,21 @@
       </div>
     </nav>
     <div class="container ">
-
-      <div class="row">
-        <div class="col-sm-3">
-          <h4> Browse Files</h4>
-          <ul class="treeview">
-            <li> <input TYPE=CHECKBOX size="50" NAME="selectedfiles"class="checks">home
-            <li> <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks"> desktop
-              <ul>
-                <li>  <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks">documnets</li>
-                <li>  <input TYPE=CHECKBOX   size="1024" NAME="selectedfiles"class="checks">pictures</li>
-                <li>  <input TYPE=CHECKBOX size="1024"  NAME="selectedfiles"class="checks">videos</li>
-
-              </ul>
-
-            </li>
-            <li>  <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks">Games</li>
-            <li>  <input TYPE=CHECKBOX size="512" NAME="selectedfiles"class="checks">Softwares
-              <ul>
-                <li>  <input TYPE=CHECKBOX size="512"  NAME="selectedfiles"class="checks">Ms Office</li>
-                <li>  <input TYPE=CHECKBOX size="512" NAME="selectedfiles"class="checks">VLC Media Player</li>
-                <li>  <input TYPE=CHECKBOX size="100" NAME="selectedfiles"class="checks">videos</li>
-
-              </ul>
-
-            </li>
-
-
-
-
-        </div>
-        <div class="col-sm-9" style="text-align:center">
-
-
-        <div>
-          <span class="noofitems"> No </span> items selected
-        </div>
-        <div>
-          <span class=""> Total Size </span>   <span class="totalsize"> 0 </span> MB
-        </div>
-
-<div style="padding:50px">
-  <button type="button " class="btn btn-primary startdownload">Start Download</button>
-</div>
-<div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-    <span class="percentage">0</span>    <span class="sr-only">Complete</span>
-
+    <h2>Products</h2>
   </div>
-</div>
-        </div>
+    <div class="container pageBody">
 
 
-      </div>
 
-  </div>
+      <hr>
 
-  <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog">
+      <footer>
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Try New Data Plan</h4>
-        </div>
-        <div class="modal-body">
-        <section class="loginform cf">
+    </div><!--/.container-->
 
-          <p> Increase your speed by 500% !</p>
 
-          <button type="button" class="btn btn-primary tryNow" data-dismiss="modal">Try Now</button>
-
-  </section>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-     </div>
-
-   </div>
-  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -156,80 +90,7 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="offcanvas.js"></script>
-      <script src="js/jquery.treeview.js"></script>
+      <script src="js/jquery.bxslider.js"></script>
 
   </body>
-
-  <script>
-  $(document).ready(
-    function(){
-      $(".startdownload").click(function(){
-        $(this).text("Downloading")
-        $(".progress").show();
-        startTimer();
-
-
-      });
-      $(".treeview").treeview();
-        $(".checks").prop("checked",false);
-      count=0;
-      totalsize=0;
-      $(".checks").click(function(){
-size=$(this).attr("size");
-        if($(this).is(":checked")){
-          count=++count;
-          totalsize=totalsize+parseInt(size);
-
-        }else{
-          count=--count;
-          totalsize=totalsize-parseInt(size);
-
-
-
-        }
-$(".noofitems").text(count);
-$(".totalsize").text(totalsize);
-
-      });
-
-    }
-  );
-  function startTimer(){
-
-
-
-inc=1;
-$(".tryNow").click(function(){
-
-  inc=5;
-});
-currentWidth=0;
-    myVar = setInterval(increaseTimer, 1000);
-    myVar2 = setTimeout(function(){
-      $("#myModal1").modal();
-    }, 5000);
-
-
-
-function increaseTimer(){
-currentWidth=currentWidth+inc;
-  width=currentWidth+"%";
-
-    $(".progress .progress-bar").width(width);
-      $(".progress .progress-bar .percentage").text(width);
-
-if(currentWidth>=100){
-  $(".progress .progress-bar").width("100%");
-    $(".progress .progress-bar .percentage").text("100");
-
-  clearInterval(myVar)
-  ;
-  $(".startdownload").text("Download Completed");
-
-}
-
-}
-
-  }
-  </script>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Miracle Personal | Products</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <link href="css/jquery.treeview.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar  navbar-inverse  navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Miracle Personal</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Voice and Unifed Communications</a></li>
+                <li><a href="#">Small Business Solutions</a></li>
+                <li><a href="#">Solutions by Challenges</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Login</a></li>
+        <li><a href="./">Register</a></li><a href="./">
+      </a></ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h4> Browse Files</h4>
+          <ul class="treeview">
+            <li> <input TYPE=CHECKBOX size="50" NAME="selectedfiles"class="checks">home
+            <li> <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks"> desktop
+              <ul>
+                <li>  <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks">documnets</li>
+                <li>  <input TYPE=CHECKBOX   size="1024" NAME="selectedfiles"class="checks">pictures</li>
+                <li>  <input TYPE=CHECKBOX size="1024"  NAME="selectedfiles"class="checks">videos</li>
+
+              </ul>
+
+            </li>
+            <li>  <input TYPE=CHECKBOX  size="1024" NAME="selectedfiles"class="checks">Games</li>
+            <li>  <input TYPE=CHECKBOX size="512" NAME="selectedfiles"class="checks">Softwares
+              <ul>
+                <li>  <input TYPE=CHECKBOX size="512"  NAME="selectedfiles"class="checks">Ms Office</li>
+                <li>  <input TYPE=CHECKBOX size="512" NAME="selectedfiles"class="checks">VLC Media Player</li>
+                <li>  <input TYPE=CHECKBOX size="100" NAME="selectedfiles"class="checks">videos</li>
+
+              </ul>
+
+            </li>
+
+
+
+
+        </div>
+        <div class="col-sm-9" style="text-align:center">
+
+
+        <div>
+          <span class="noofitems"> No </span> items selected
+        </div>
+        <div>
+          <span class=""> Total Size </span>   <span class="totalsize"> 0 </span> MB
+        </div>
+
+<div style="padding:50px">
+  <button type="button " class="btn btn-primary startdownload">Start Download</button>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+    <span class="percentage">0</span>    <span class="sr-only">Complete</span>
+
+  </div>
+</div>
+        </div>
+
+
+      </div>
+
+  </div>
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Try New Data Plan</h4>
+        </div>
+        <div class="modal-body">
+        <section class="loginform cf">
+
+          <p> Increase your speed by 500% !</p>
+
+          <button type="button" class="btn btn-primary tryNow" data-dismiss="modal">Try Now</button>
+
+  </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+     </div>
+
+   </div>
+  </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="offcanvas.js"></script>
+      <script src="js/jquery.treeview.js"></script>
+
+  </body>
+
+  <script>
+  $(document).ready(
+    function(){
+      $(".startdownload").click(function(){
+        $(this).text("Downloading")
+        $(".progress").show();
+        startTimer();
+
+
+      });
+      $(".treeview").treeview();
+        $(".checks").prop("checked",false);
+      count=0;
+      totalsize=0;
+      $(".checks").click(function(){
+size=$(this).attr("size");
+        if($(this).is(":checked")){
+          count=++count;
+          totalsize=totalsize+parseInt(size);
+
+        }else{
+          count=--count;
+          totalsize=totalsize-parseInt(size);
+
+
+
+        }
+$(".noofitems").text(count);
+$(".totalsize").text(totalsize);
+
+      });
+
+    }
+  );
+  function startTimer(){
+
+
+
+inc=1;
+$(".tryNow").click(function(){
+
+  inc=5;
+});
+currentWidth=0;
+    myVar = setInterval(increaseTimer, 1000);
+    myVar2 = setTimeout(function(){
+      $("#myModal1").modal();
+    }, 5000);
+
+
+
+function increaseTimer(){
+currentWidth=currentWidth+inc;
+  width=currentWidth+"%";
+
+    $(".progress .progress-bar").width(width);
+      $(".progress .progress-bar .percentage").text(width);
+
+if(currentWidth>=100){
+  $(".progress .progress-bar").width("100%");
+    $(".progress .progress-bar .percentage").text("100");
+
+  clearInterval(myVar)
+  ;
+  $(".startdownload").text("Download Completed");
+
+}
+
+}
+
+  }
+  </script>
+</html>

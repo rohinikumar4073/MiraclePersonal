@@ -28,4 +28,7 @@ border-radius: 4px;}
 .bx-pager{display: none;}
 .bxSlider{display: flex;}
 .viewdetails{position: absolute;
-bottom: 10px;opacity: 0.8;right: 5px}
+bottom: 10px;opacity: 0.8;right: 5px;}
+.treeview li{position:relative;top:-5px; }
+input.checks{margin-right: 5px;}
+.progress{display: none;}

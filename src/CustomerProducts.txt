@@ -1,0 +1,2 @@
+keerthi.gudur@one.verizon.com,Prod1,Voice,1820MB
+keerthi.gudur@one.verizon.com,Prod2,InternetAccess,500MB

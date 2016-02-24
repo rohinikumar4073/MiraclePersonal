@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Miracle Personal | Products</title>
+    <title>Sell T | Products</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
   <% String username = (String)request.getSession().getAttribute("name");
   String inputData = (String)request.getSession().getAttribute("inputData");
   String outputData = (String)request.getSession().getAttribute("outputData");%>
-   
+
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Miracle Personal</a>
+          <a class="navbar-brand" href="./">Sell T</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -62,6 +62,10 @@
             </li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+                    <li><a href="./download">Download</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+
+
 
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -80,15 +84,22 @@
 
       <hr>
 
-      <footer>
-        <p>&copy; 2015 Company, Inc.</p>
-         <%= inputData %><br>
-                  <%= outputData %>
-         
-      </footer>
+
 
     </div><!--/.container-->
+    <div class="container ">
 
+
+
+      <hr>
+
+      <footer>
+        <p>&copy;Sell T 2015 Company, Inc.</p>
+
+
+      </footer>
+
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

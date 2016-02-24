@@ -17,7 +17,7 @@ opacity: 0.95;}
 
 .form_submit label.header{font-size: 18px;
 color: #000;}
-.blocks,.bxSlider li{background-color: rgb(232, 246, 254);
+.blocks,.bxSlider li,.bundlesSlider li{background-color: rgb(232, 246, 254);
   min-height: 150px;padding:10px;
   margin-right: 10px;
 border: 1px solid #f3f3f3;
@@ -26,9 +26,11 @@ border-radius: 4px;}
 .bx-wrapper .bx-next{right: -60px}
 .bx-wrapper .bx-prev{left: -60px}
 .bx-pager{display: none;}
-.bxSlider{display: flex;}
+.bxSlider,.bundlesSlider{display: flex;}
 .viewdetails{position: absolute;
 bottom: 10px;opacity: 0.8;right: 5px;}
-.treeview li{position:relative;top:-5px; }
-input.checks{margin-right: 5px;}
-.progress{display: none;}
+
+.progress{display:none;}
+.treeview li{position:relative;top:5px}
+.treeview li input{margin-right:5px}
+.table-striped th{text-align: center}

@@ -14,6 +14,26 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 		<servlet-name>getProducts</servlet-name>
 		<url-pattern>/getProducts</url-pattern>
 	</servlet-mapping>
+			<servlet>
+		<servlet-name>sendInvoice</servlet-name>
+		<servlet-class>com.hackathon.support.Invoice</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>sendInvoice</servlet-name>
+		<url-pattern>/InvoiceServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>downloads</servlet-name>
+		<servlet-class>com.miraclepersona.DownloadData</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>downloads</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
 		<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 				<welcome-file>index.jsp</welcome-file>

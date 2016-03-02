@@ -20,7 +20,7 @@ public class Invoice extends HttpServlet{
 		String subject;
 		String header;
 		String body;
-		String filePath = "C:\\Users\\Administrator\\workspace\\MiraclePersonal\\src\\Invoice.pdf"; // path of invoice.pdf
+		String filePath = "C:\\Users\\Administrator\\git\\MiraclePersonal\\src\\Invoice.pdf"; // path of invoice.pdf
 		System.out.println("in the post");
 		if (request.getParameter("inv") != null) {
 			System.out.println("in the inv");
@@ -31,7 +31,7 @@ public class Invoice extends HttpServlet{
 			body = "Thank you for using our service! Please find the bill attached for your previous month's usage.<br/> <br/>" + 
 					"&nbsp;&nbsp;&nbsp;Use our Automated bill payment option in <a href=\"URL\">our website</a> to pay your bills automatically without any delay.<br/><br/>" +
 					"&nbsp;&nbsp;&nbsp;Visit our Website to know more of our products.";
-			notify.createMailContent("keerthi.gudur@one.verizon.com", subject, header, body, filePath);
+			notify.createMailContent("sarathchandra.x.konidena@one.verizon.com", subject, header, body, filePath);
 			
 		} else if (request.getParameter("alr") != null) {
 			System.out.println("in the alr");
@@ -42,7 +42,9 @@ public class Invoice extends HttpServlet{
 			body = "Thank you for using our service! You have reached 80% of your internet pack on mobile number 6547768854.<br/> <br/>" + 
 					"&nbsp;&nbsp;&nbsp;Please dial *111# to upgrade your usage to enjoy our service without any interruption.<br/><br/>" +
 					"&nbsp;&nbsp;&nbsp;Visit <a href=\"URL\">our website</a> to know more of our products.";
-			notify.createMailContent("keerthi.gudur@one.verizon.com", subject, header, body, null);
+			//notify.createMailContent("keerthi.gudur@one.verizon.com", subject, header, body, null);
+			notify.createMailContent("sarathchandra.x.konidena@one.verizon.com", subject, header, body, null);
+
 			System.out.println("comlteed");
 
 			
